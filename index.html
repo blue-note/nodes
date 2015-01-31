@@ -1,0 +1,85 @@
+<!doctype html>
+
+
+<html>
+
+<style>
+    body {
+    background-color: #D7D7D7;
+    
+    }
+    
+  .buttons {
+	background-color: #65BFAD;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+  border-radius:28px;
+	border:0px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color: #ffffff;
+	font-family:arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+  position: fixed;
+  top: 50px;
+  right: 680px;
+}
+  .buttons:hover {
+	background-color:#66CCCC;
+}
+
+  canvas {
+    position: fixed;
+}
+
+ul#ruleList
+{
+    display:none;
+}
+.actions:hover ul#ruleList
+{
+    display: block;
+    margin-left: 150px;
+    margin-right: auto;
+    color: #000000;
+    font-family:arial;
+    font-size:15px;
+    text-decoration:none;
+    position: fixed;
+    top: 90px;
+}
+  
+
+    </style>
+
+    
+    
+ <body>
+
+    <!--button id="test">TEST</button-->
+     <canvas id="edgeCanvas" width="1500" height="900"></canvas>
+  
+
+  <div class="actions">
+    <button id="rules" class="buttons">How To Play</button>
+      <ul id="ruleList">
+        <p> ON EACH TURN, you can make one of two moves: add a new node or add a new edge between two existing and unconnected nodes. </p>
+        <p> TO ADD a new node, click the board to create a new node and click another node to connect them. </p>  
+        <p> TO ADD a new edge, click two consecutive nodes. </p>
+        <p> WHEN you connect any two nodes, the colors of their neighbors become inverted. Nodes can have at most 3 neighbors. </p>
+        <p> Your color is green. The computer's color is purple. TO WIN: have the most nodes of your color when the game ends. </p>
+
+  </ul>
+</div>
+     
+  </body>   
+  
+  <script src="jquery.min.js"></script>
+   <script src="nodes.js"></script>   
+    
+    
+</html>
+
