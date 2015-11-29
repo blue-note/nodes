@@ -4,17 +4,14 @@ A graph based game with AI component. AI uses Monte Carlo Tree Search to select 
 
 To start game: 
 
-download the repo 
+1. download repo 
 
-run command "java WebService 8888"
+2. run command "java WebService 8888"
 
-Open index.html in browser
+3. Open index.html in browser
 
-Human makes the first move
+4. Human makes the first move
 
-run command 'java WebService 8888'
-
-human makes first move
 
 
 
